@@ -6,8 +6,8 @@ ENV GOOGLE_APPLICATION_CREDENTIALS /app/google-insane-key.json
 WORKDIR /app
 
 COPY google-insane-key.json .
-COPY publisher.py .
-COPY requirements.txt .
+COPY publisher/publisher.py .
+COPY publisher/requirements.txt .
 
 RUN apt-get update && \
     pip install -r requirements.txt
