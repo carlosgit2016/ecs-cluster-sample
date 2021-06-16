@@ -16,6 +16,6 @@ with pubsub_v1.SubscriberClient() as subscriber:
     future = subscriber.subscribe(subscription_name, callback)
     
     try:
-        future.result()
+        print(future.result())
     except Exception as ex:
         subscriber.cancel()
