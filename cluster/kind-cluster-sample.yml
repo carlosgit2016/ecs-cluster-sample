@@ -11,3 +11,4 @@ nodes:
   extraPortMappings:
   - containerPort: 30007
     hostPort: 30007
+    listenAddress: "127.0.0.1"

@@ -8,7 +8,7 @@ metadata:
   labels:
     app: pub
 spec:
-  replicas: 0 # Run one pod matching the template
+  replicas: 1 # Run one pod matching the template
   selector:
     matchLabels:
       app: pub
@@ -35,6 +35,5 @@ spec:
   selector:
     app: pub
   ports:
-    - port: 80
-      targetPort: 6895
+    - port: 6895
       nodePort: 30007

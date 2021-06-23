@@ -7,15 +7,17 @@ from google.cloud import pubsub_v1
 subscription_name = 'projects/eld-efs-sandbox-5576df8f/subscriptions/insane-subscription'
 
 def callback(message):
-    print({
-        'message': str(message)
-    })
+    print(message)
     message.ack()
 
 with pubsub_v1.SubscriberClient() as subscriber:
     future = subscriber.subscribe(subscription_name, callback)
     
     try:
-        print(future.result())
+        future.result()
+    except future.exception as base:
+        print(base)
     except Exception as ex:
-        subscriber.cancel()
+        print(ex)
+    finally:
+        future.cancel()
