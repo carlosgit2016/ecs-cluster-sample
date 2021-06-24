@@ -1,7 +1,7 @@
 resource "google_service_account" "service_account" {
   account_id   = "insane-service-account"
   display_name = "Insane service account"
-  project = "eld-efs-sandbox-5576df8f"
+  project = "insane_project"
 }
 
 resource "google_service_account_key" "mykey" {

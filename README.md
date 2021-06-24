@@ -29,7 +29,7 @@ gcloud auth application-default login
 - Configure the provider block, get the project id from [Manager Console](https://console.cloud.google.com/cloud-resource-manager)
 ```terraform
 provider "google" {
-  project = "eld-efs-sandbox-5576df8f"
+  project = "insane_project"
   region  = "us-central1"
 }
 ```

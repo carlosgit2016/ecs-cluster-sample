@@ -1,4 +1,4 @@
 provider "google" {
-  project = "eld-efs-sandbox-5576df8f"
+  project = "insane_project"
   region  = "us-central1"
 }

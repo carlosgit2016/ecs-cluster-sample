@@ -9,7 +9,7 @@ import flask
 from flask import request
 
 
-topic_name = 'projects/eld-efs-sandbox-5576df8f/topics/insane-topic'
+topic_name = 'projects/insane_project/topics/insane-topic'
 
 def publish_topic(message=b'Hello World', **kwargs):
 

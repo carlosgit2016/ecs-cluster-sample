@@ -4,7 +4,7 @@
 
 from google.cloud import pubsub_v1
 
-subscription_name = 'projects/eld-efs-sandbox-5576df8f/subscriptions/insane-subscription'
+subscription_name = 'projects/insane_project/subscriptions/insane-subscription'
 
 def callback(message):
     print(message)

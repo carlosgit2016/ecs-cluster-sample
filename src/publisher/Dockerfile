@@ -1,6 +1,6 @@
 FROM python:3.8
 
-ENV GLOUD_PROJECT eld-efs-sandbox-5576df8f
+ENV GLOUD_PROJECT insane_project
 ENV GOOGLE_APPLICATION_CREDENTIALS /app/google-insane-key.json
 
 WORKDIR /app
